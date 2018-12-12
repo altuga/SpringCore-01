@@ -8,7 +8,7 @@ public class Main {
   public static void main(String[] args) throws Exception {
     ClassPathXmlApplicationContext context =
             new ClassPathXmlApplicationContext(
-                    "META-INF/analist.xml");
+                    "META-INF/coder.xml");
     Coder coder = context.getBean(Coder.class);
     coder.startCoding();
     context.close();
